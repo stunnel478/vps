@@ -49,10 +49,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=ZEAKINGSTORE
-organizationalunit=ZEAKINGSTORE
-commonname=ZEAKINGSTORE
-email=ageng.an99@gmail.com
+organization=DEDIWEBS
+organizationalunit=DEDIWEBS
+commonname=DEDIWEBS
+email=mail@dediwebs.my.id
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://${akbarvpn}/password"
