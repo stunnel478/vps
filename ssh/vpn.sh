@@ -26,7 +26,7 @@ fi
 # By Akbar Maulana
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/zeaking/vps/master/ssh"
+akbarvpn="raw.githubusercontent.com/DhedyKurnia/vps/master/ssh"
 
 # initialisasi var
 export DEBIAN_FRONTEND=noninteractive
