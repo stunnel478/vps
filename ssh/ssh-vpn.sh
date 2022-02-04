@@ -26,16 +26,16 @@ exit 0
 fi
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/zeaking/vps/master/ssh"
+akbarvpn="raw.githubusercontent.com/DhedyKurnia/vps/master/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="raw.githubusercontent.com/zeaking/vps/master/xray"
+akbarvpnn="raw.githubusercontent.com/DhedyKurnia/vps/master/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="raw.githubusercontent.com/zeaking/vps/master/trojango"
+akbarvpnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="raw.githubusercontent.com/zeaking/vps/master/stunnel5"
+akbarvpnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/stunnel5"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
