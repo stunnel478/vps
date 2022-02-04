@@ -13,23 +13,13 @@ LIGHT='\033[0;37m'
 # ==========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/DhedyKurnia/vps/master/ipvps.txt | grep $MYIP )
-if [ $MYIP = $IZIN ]; then
-echo -e "${NC}${GREEN}Permission Accepted...${NC}"
-else
-echo -e "${NC}${RED}Permission Denied!${NC}";
-echo -e "${NC}${LIGHT}Please Contact Admin!!"
-echo -e "${NC}${LIGHT}Telegram : https://t.me/zeaking5"
-exit 0     
-fi
 clear
 apt install jq curl -y
 DOMAIN=zeaking.me
 sub=$(</dev/urandom tr -dc a-z0-9 | head -c4)
-SUB_DOMAIN=${sub}.zeaking.me
-CF_ID=mulahkual@gmail.com
-CF_KEY=1351e3252ad80b9a761d34d125545053403b5
+SUB_DOMAIN=${sub}.caricara.web.id
+CF_ID=dhedykurniaa@gmail.com
+CF_KEY=409e8e51105948115f943436e0388f2ef1586
 set -euo pipefail
 IP=$(wget -qO- ipinfo.io/ip);
 echo "Updating DNS for ${SUB_DOMAIN}..."
