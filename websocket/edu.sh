@@ -25,7 +25,7 @@ echo -e "${NC}${LIGHT}Telegram : https://t.me/zeaking5"
 exit 0
 fi
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/zeaking/vps/master/websocket"
+akbarvpn="raw.githubusercontent.com/DhedyKurnia/vps/master/websocket"
 
 # Getting Proxy Template
 wget -q -O /usr/local/bin/websocket https://${akbarvpn}/websocket.py
