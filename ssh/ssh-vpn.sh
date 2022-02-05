@@ -49,10 +49,10 @@ ver=$VERSION_ID
 country=ID
 state=Indonesia
 locality=Indonesia
-organization=DEDIWEBS
-organizationalunit=DEDIWEBS
-commonname=DEDIWEBS
-email=mail@dediwebs.my.id
+organization=DEWA19
+organizationalunit=DEWA19
+commonname=DEWA19
+email=mail@sshboost.my
 
 # simple password minimal
 wget -O /etc/pam.d/common-password "https://${akbarvpn}/password"
