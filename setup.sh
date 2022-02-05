@@ -21,30 +21,30 @@ LIGHT='\033[0;37m'
 # ==========================================
 # ==========================================
 # Link Hosting Kalian Untuk Ssh Vpn
-akbarvpn="raw.githubusercontent.com/DhedyKurnia/vps/master/ssh"
+akbarvpn="raw.githubusercontent.com/stunnel478/vps/master/ssh"
 # Link Hosting Kalian Untuk Sstp
-akbarvpnn="raw.githubusercontent.com/DhedyKurnia/vps/master/sstp"
+akbarvpnn="raw.githubusercontent.com/stunnel478/vps/master/sstp"
 # Link Hosting Kalian Untuk Ssr
-akbarvpnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/ssr"
+akbarvpnnn="raw.githubusercontent.com/stunnel478/vps/master/ssr"
 # Link Hosting Kalian Untuk Shadowsocks
-akbarvpnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/shadowsocks"
+akbarvpnnnn="raw.githubusercontent.com/stunnel478/vps/master/shadowsocks"
 # Link Hosting Kalian Untuk Wireguard
-akbarvpnnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/wireguard"
+akbarvpnnnnn="raw.githubusercontent.com/stunnel478/vps/master/wireguard"
 # Link Hosting Kalian Untuk Xray
-akbarvpnnnnnn="raw.githubusercontent.com/DhedyKurniag/vps/master/xray"
+akbarvpnnnnnn="raw.githubusercontent.com/stunnel478/vps/master/xray"
 # Link Hosting Kalian Untuk Ipsec
-akbarvpnnnnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/ipsec"
+akbarvpnnnnnnn="raw.githubusercontent.com/stunnel478/vps/master/ipsec"
 # Link Hosting Kalian Untuk Backup
-akbarvpnnnnnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/backup"
+akbarvpnnnnnnnn="raw.githubusercontent.com/stunnel478/vps/master/backup"
 # Link Hosting Kalian Untuk Websocket
-akbarvpnnnnnnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/websocket"
+akbarvpnnnnnnnnn="raw.githubusercontent.com/stunnel478/vps/master/websocket"
 # Link Hosting Kalian Untuk Ohp
-akbarvpnnnnnnnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/ohp"
+akbarvpnnnnnnnnnn="raw.githubusercontent.com/stunnel478/vps/master/ohp"
 
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/DhedyKurnia/vps/master/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/stunnel478/vps/master/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
