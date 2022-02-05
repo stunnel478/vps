@@ -15,7 +15,7 @@ LIGHT='\033[0;37m'
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
 echo "Checking VPS"
-IZIN=$( curl https://raw.githubusercontent.com/DhedyKurnia/vps/master/ipvps.txt | grep $MYIP )
+IZIN=$( curl https://raw.githubusercontent.com/stunnel478/vps/master/ipvps.txt | grep $MYIP )
 if [ $MYIP = $IZIN ]; then
 echo -e "${NC}${GREEN}Permission Accepted...${NC}"
 else
@@ -26,16 +26,16 @@ exit 0
 fi
 # ==================================================
 # Link Hosting Kalian
-akbarvpn="raw.githubusercontent.com/DhedyKurnia/vps/master/ssh"
+akbarvpn="raw.githubusercontent.com/stunnel478/vps/master/ssh"
 
 # Link Hosting Kalian Untuk Xray
-akbarvpnn="raw.githubusercontent.com/DhedyKurnia/vps/master/xray"
+akbarvpnn="raw.githubusercontent.com/stunnel478/vps/master/xray"
 
 # Link Hosting Kalian Untuk Trojan Go
-akbarvpnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/trojango"
+akbarvpnnn="raw.githubusercontent.com/stunnel478/vps/master/trojango"
 
 # Link Hosting Kalian Untuk Stunnel5
-akbarvpnnnn="raw.githubusercontent.com/DhedyKurnia/vps/master/stunnel5"
+akbarvpnnnn="raw.githubusercontent.com/stunnel478/vps/master/stunnel5"
 
 # initializing var
 export DEBIAN_FRONTEND=noninteractive
