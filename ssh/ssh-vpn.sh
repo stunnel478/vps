@@ -255,9 +255,8 @@ rm -rf /root/vnstat-2.6
 
 # install stunnel 5 
 cd /root/
-wget -q "https://${akbarvpnnnn}/stunnel5"
-unzip -qq stunnel5.zip
-cd /root/stunnel
+wget -q -O stunnel5.zip "https://${akbarvpnnnn}/stunnel5"
+unzip -o stunnel5.zip
 chmod +x configure
 ./configure
 make
