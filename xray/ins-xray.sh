@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-domain=$(cat /root/domain)
+domain=$(cat /etc/xray/domain)
 apt install iptables iptables-persistent -y
 apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
 apt install socat cron bash-completion ntpdate -y
@@ -36,7 +36,7 @@ xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_vers
 
 # / / Make Main Directory
 mkdir -p /usr/bin/xray
-mkdir -p /etc/xray
+#mkdir -p /etc/xray
 
 # / / Unzip Xray Linux 64
 cd `mktemp -d`
@@ -48,10 +48,10 @@ chmod +x /usr/local/bin/xray
 # Make Folder XRay
 mkdir -p /var/log/xray/
 
-mkdir /root/.acme.sh
-curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
-chmod +x /root/.acme.sh/acme.sh
-/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
+#mkdir /root/.acme.sh
+#curl https://acme-install.netlify.app/acme.sh -o /root/.acme.sh/acme.sh
+#chmod +x /root/.acme.sh/acme.sh
+#/root/.acme.sh/acme.sh --issue -d $domain --standalone -k ec-256
 ~/.acme.sh/acme.sh --installcert -d $domain --fullchainpath /etc/xray/xray.crt --keypath /etc/xray/xray.key --ecc
 service squid start
 uuid1=$(cat /proc/sys/kernel/random/uuid)
