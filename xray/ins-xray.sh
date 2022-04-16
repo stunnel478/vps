@@ -14,7 +14,7 @@ LIGHT='\033[0;37m'
 
 MYIP=$(wget -qO- ipinfo.io/ip);
 clear
-domain=$(cat /etc/xray/domain)
+domain=$(cat /root/domain)
 apt install iptables iptables-persistent -y
 apt install curl socat xz-utils wget apt-transport-https gnupg gnupg2 gnupg1 dnsutils lsb-release -y 
 apt install socat cron bash-completion ntpdate -y
@@ -36,7 +36,7 @@ xraycore_link="https://github.com/XTLS/Xray-core/releases/download/v$latest_vers
 
 # / / Make Main Directory
 mkdir -p /usr/bin/xray
-#mkdir -p /etc/xray
+mkdir -p /etc/xray
 
 # / / Unzip Xray Linux 64
 cd `mktemp -d`
